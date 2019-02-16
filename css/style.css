@@ -679,12 +679,21 @@ i:before {
   padding-bottom: 7px;
 }
 
-.header_contact_details .pull-right .media .media-body h5 {
-  font-size: 14px;
+.brand-text{
   font-family: "Montserrat", sans-serif;
-  color: #767676;
-  letter-spacing: .42px;
+  font-size: xx-large;
+  letter-spacing: 3px;
+  color: #4692ef;
+  font-weight: 600;
 }
+
+.brand-text:hover{
+  font-family: "Montserrat", sans-serif;
+  font-size: xx-large;
+  letter-spacing: 3px;
+  color: white;
+}
+
 
 .header_contact_details .pull-right .media:last-child {
   margin-right: 0px;
