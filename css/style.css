@@ -49,6 +49,174 @@ Table of Content:
 }
 
 /*---------------------------------------------------- */
+
+/*page loader*/
+#loading {
+    background: url('../img/logo.gif') no-repeat center center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 9999999;
+}
+
+/*floating button*/
+#trigger{
+
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 50%;
+  color: white;
+  background-color: #1abc9c;
+  position: absolute;
+  right: 2%;
+  bottom: 3%;
+  animation-name: bgchange;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  z-index: 999;
+  position: fixed;
+  transition: transform .2s;
+}
+
+#trigger:hover{
+  -ms-transform: scale(1.2); /* IE 9 */
+  -webkit-transform: scale(1.2); /* Safari 3-8 */
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+#whatsapp{
+  padding: 16px;
+/*  padding-left: 18px;
+  padding-right: 18px;
+*/  border-radius: 50%;
+  color: white;
+  background-color: #25D366;
+  position: absolute;
+  right: 2%;
+  bottom: 3%;
+  z-index: 99;
+  position: fixed;
+  transition: transform 500ms ease-in-out;
+  visibility: hidden;
+}
+
+#whatsapp:hover{
+  -ms-transform: scale(1.2); /* IE 9 */
+  -webkit-transform: scale(1.2); /* Safari 3-8 */
+  transform: scale(1.2);
+  cursor: pointer;
+}
+#sms{
+  padding: 13px;
+/*  padding-left: 16px;
+  padding-right: 16px;
+*/  border-radius: 50%;
+  color: white;
+  background-color: #999;
+  position: absolute;
+  right: 2%;
+  bottom: 3%;
+  z-index: 99;
+  position: fixed;
+  transition: transform 500ms ease-in-out;
+  visibility: hidden;
+}
+
+#sms:hover{
+  -ms-transform: scale(1.2); /* IE 9 */
+  -webkit-transform: scale(1.2); /* Safari 3-8 */
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+#telegram{
+  padding: 15px;
+/*  padding-left: 16px;
+  padding-right: 16px;
+*/  border-radius: 50%;
+  color: white;
+  background-color: #e0cfb1;
+  position: absolute;
+  right: 2%;
+  bottom: 3%;
+  z-index: 99;
+  position: fixed;
+  transition: transform 500ms ease-in-out;
+  visibility: hidden;
+}
+#telegram:hover{
+  -ms-transform: scale(1.2); /* IE 9 */
+  -webkit-transform: scale(1.2); /* Safari 3-8 */
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+#call{
+  padding: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 50%;
+  color: white;
+  background-color: red;
+  position: absolute;
+  right: 2%;
+  bottom: 3%;
+  z-index: 99;
+  position: fixed;
+  transition: transform 500ms ease-in-out;
+  visibility: hidden;
+}
+#call:hover{
+  -ms-transform: scale(1.2); /* IE 9 */
+  -webkit-transform: scale(1.2); /* Safari 3-8 */
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+#trigger.clicked + #whatsapp{
+    visibility: visible;
+    transform: translate(0, -320px);
+}
+#trigger.clicked ~ #sms{
+    visibility: visible;
+    transform: translate(0, -240px);
+}
+#trigger.clicked ~ #telegram{
+    visibility: visible;
+    transform: translate(0, -160px);
+}
+#trigger.clicked ~ #call{
+    visibility: visible;
+    transform: translate(0, -80px);
+}
+#trigger span{
+  font-size: 40px;
+}
+#whatsapp span{
+  font-size: 40px;
+}
+#sms span{
+  font-size: 40px;
+}
+#telegram span{
+  font-size: 40px;
+}
+#call span{
+  font-size: 40px;
+}
+
+@keyframes bgchange{
+  0% {background-color: #1abc9c;}
+  25% {background-color: #e74c3c;}
+  50% {background-color: #3498db;}
+  75% {background-color: yellow;}
+  100% {background-color: #1abc9c;}
+}
+
 /*----------------------------------------------------*/
 ul {
   list-style: none;
@@ -1205,6 +1373,11 @@ i:before {
 /*----------------------------------------------------*/
 /* Slider area css
 ============================================================================================ */
+#background-tint{
+  background-color: rgba(0,0,0,0.6);
+  background-blend-mode: multiply;
+}
+
 .main_slider_area {
   position: relative;
 }
@@ -1865,7 +2038,7 @@ i:before {
 /* Practice area css
 ============================================================================================ */
 .practice_area {
-  padding: 100px 0px;
+  padding: 50px 0 0 0;
 }
 
 .practice_item .practice_image {
@@ -1944,13 +2117,14 @@ i:before {
   padding-top: 25px;
   text-align: center;
 }
-.practice_item h3 {
+.practice_item h2 {
   font-size: 27px;
   font-family: "Lato", sans-serif;
   font-weight: bold;
   color: #242424;
-  margin-bottom: -30px;
   color:#0555b6;
+  text-align: center;
+  margin-bottom: 5px;
 }
 
 
