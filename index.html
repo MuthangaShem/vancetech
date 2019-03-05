@@ -61,13 +61,11 @@
     <body>
         <div id="trigger"><span class="animated bounce delay-1s fas fa-mobile-alt"></span></div>
             <div id="whatsapp">
-                <a target="-_blank" href="https://wa.me/254714937445"><span class="fab fa-whatsapp"></span></a>
+                <a target="-_blank" href="https://wa.me/254714937445?text=I'm%20interested%20in%20working%20with%20VanceTech.%20Here%20are%20the%20details..."><span class="fab fa-whatsapp"></span></a>
             </div>
-            <div id="call">
-                <span class="fas fa-mobile-alt"></span>
+            <div id="call"><a href="tel:254714937445"><span class="fas fa-mobile-alt"></span></a>
             </div>
-            <div id="sms">
-                <span class="fas fa-sms "></span>
+            <div id="sms"><a href="sms:254714937445&body=I'm%20interested%20in%20working%20with%20VanceTech.%20Here%20are%20the%20details..."><span class="fas fa-sms "></span></a>
             </div>
             <div id="telegram">
                 <span class="fab fa-telegram"></span>
@@ -82,7 +80,7 @@
                     <div class="header_top_inner">
                         <div class="pull-left">
                             <a href="#"><i class="fas fa-mobile-alt"></i>+ (254) 714937445</a>
-                            <a href="#"><i class="fas fa-envelope-open-text"></i>info@vancetech.com</a>
+                            <a href="#"><i class="far fa-envelope"></i>info@vancetech.com</a>
                             <a href="#"><i class="icon icon-Timer"></i>Mon-Sat : 8 am to 7 pm</a>
                         </div>
                         <div class="pull-right">
@@ -371,24 +369,117 @@
     <div class="modal-content">
 
       <!--Modal cascading tabs-->
-      <ul class="nav nav-pills nav-justified" id="pills-tab" role="tablist">
-        <h3>Please choose an area of interest.</h3>
-          <li class="nav-item active">
-            <a class="nav-link active" id="pills-academic-tab" data-toggle="pill" href="#pills-academic" role="tab" aria-controls="pills-academic" aria-selected="true">Academic Reasearch</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" id="pills-corporate-tab" data-toggle="pill" href="#pills-corporate" role="tab" aria-controls="pills-corporate" aria-selected="false">Corporate Research</a>
-          </li>
+    <ul class="nav nav-pills nav-justified" role="tablist">
+            <li role="presentation" class="active "><a href="#academic" aria-controls="academic" role="tab" data-toggle="tab">Academic Research</a></li>
+            <li role="presentation" ><a href="#corporate" aria-controls="corporate" role="tab" data-toggle="tab">Corporate Research</a></li>
     </ul>
-    <div class="tab-content" id="pills-tabContent">
-    <div class="tab-pane fade in active" id="pills-academic" role="tabpanel" aria-labelledby="pills-academic-tab">
-    Academic Research
+    <div class="carrers_right_content">
+        <div class="tab-content">
+            <div role="tabpanel" class="tab-pane fade in active" id="academic">
+        <form>
+        <div class="form-row">
+            <div class="form-group">
+                <p>Gone are the days when you can’t meet a deadline to an essay. Our competent team are here to assist you in solving any academic task. They take the stress off your shoulders by helping you craft well-researched papers whenever you need them.</p>                
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-4">
+                <label for="name">Name</label>
+                <input type="name" class="form-control" id="name" placeholder="Your name...">
+            </div>
+            <div class="form-group col-md-4">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Email">
+            </div>
+            <div class="form-group col-md-4">
+                <label for="number">Phone Number</label>
+                <input type="number" class="form-control" id="number" placeholder="Phone Number">
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="inputState">Service</label>
+                <select id="inputState" class="form-control">
+                <option selected>Admission Essays</option>
+                <option>Annotated Bibliographies</option>
+                <option>MA/MSC/MBA/MPM Proposal/Project</option>
+                <option>PhD Thesis Development</option>
+                <option>Data Collection & Analysis</option>
+                <option>Journal Article Development</option>
+                <option>Publishing</option>
+                <option>Report Writing & Review</option>
+                <option>Research Support</option>
+                </select>
+            </div>
+            <div class="form-group col-md-6">
+                <div class="dates">
+                    <label for="">Deadline</label>
+                    <input type="text" autocomplete="off" class="form-control" id="user1" placeholder="dd-mm-yyyy">
+                </div>
+            </div>
+        </div>
+
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Let's Work Together</button>
+        </div>
+
+    </form>
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="corporate">
+                <form>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <p>Our corporate research is designed to present the opinion of Objective's analysts and what they believe to be the objective prospects of the highlighted company. Where we may make reference to estimates of value or relative value of a specific company, these are to illustrate how the company may be viewed using standard analysis tools assuming an "average" investor.</p>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-4">
+                            <label for="name">Name</label>
+                            <input type="name" class="form-control" id="name" placeholder="Your name...">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Email">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="number">Phone Number</label>
+                            <input type="number" class="form-control" id="number" placeholder="Phone Number">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="inputState">Service</label>
+                            <select id="inputState" class="form-control">
+                            <option selected>Strategic Planning</option>
+                            <option>Feasibility Study</option>
+                            <option>Baseline Survey</option>
+                            <option>Customer Satisfaction Survey</option>
+                            <option>Employee Satisfaction Survey</option>
+                            <option>ICt & Itax Consulting</option>
+                            <option>Data Collection & Analysis</option>
+                            <option>Business Plans</option>
+                            <option>Tender Write Ups & Documentation</option>
+                            <option>Environmental Management Plans</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <div class="dates">
+                                <label for="">Deadline</label>
+                                <input type="text" autocomplete="off" class="form-control" id="user1" placeholder="dd-mm-yyyy">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Let's Work Together</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
     </div>
-    <div>
-      <div class="tab-pane fade" id="pills-corporate" role="tabpanel" aria-labelledby="pills-corporate-tab">Corporate Research</div>
-    </div>
-    </div>
-    
     <!--/.Content-->
   </div>
 </div>
