@@ -12,10 +12,16 @@
 
         <!-- Icon css link -->
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+        <script src="js/jquery-2.2.4.js"></script>
+
         
         <!-- Bootstrap -->
         <link href="css/bootstrap.min.css" rel="stylesheet">
-        
+
+        <!-- datepicker -->
+        <link rel="stylesheet" type="text/css" href="vendors/datepicker/bootstrap-datepicker.css">
+   
         <!-- Rev slider css -->
         <link href="vendors/revolution/css/settings.css" rel="stylesheet">
         <link href="vendors/revolution/css/layers.css" rel="stylesheet">
@@ -36,16 +42,18 @@
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
 
-        <!--page loader-->
+        <!--datepicker-->
         <script type="text/javascript" >
-            function hideLoader() {
-                $('#loading').hide();
-            }
-
-            $(window).ready(hideLoader);
-
-            // Strongly recommended: Hide loader after 20 seconds, even if the page hasn't finished loading
-            setTimeout(hideLoader, 0.2);
+            $(function(){
+                $('.dates #user1').datepicker({
+                    weekStart: 1,
+                    startDate: "today",
+                    clearBtn: true,
+                    autoclose: true,
+                    todayHighlight: true,
+                    toggleActive: true
+                });
+            });
         </script>
 
 
@@ -53,7 +61,7 @@
     <body>
         <div id="trigger"><span class="animated bounce delay-1s fas fa-mobile-alt"></span></div>
             <div id="whatsapp">
-                <span class="fab fa-whatsapp"></span>
+                <a target="-_blank" href="https://wa.me/254714937445"><span class="fab fa-whatsapp"></span></a>
             </div>
             <div id="call">
                 <span class="fas fa-mobile-alt"></span>
@@ -241,8 +249,8 @@
                                 data-type="text" 
                                 data-responsive_offset="on" 
                                 data-frames="[{&quot;delay&quot;:10,&quot;speed&quot;:1500,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;&quot;,&quot;mask&quot;:&quot;x:0px;y:[100%];s:inherit;e:inherit;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power2.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:1500,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;y:[175%];&quot;,&quot;mask&quot;:&quot;x:inherit;y:inherit;s:inherit;e:inherit;&quot;,&quot;ease&quot;:&quot;Power2.easeInOut&quot;}]">
-                                <a class="main_btn" href="#">Our Services</a>
-                                <a class="main_b_btn" href="#">Contact Us</a>
+                                <a class="main_btn" href=""  data-toggle="modal" data-target="#getStarted">Get Started</a>
+                                <a class="main_b_btn" href="services.html">Our Services</a>
                             </div>
                         </div>
                     </li>
@@ -297,8 +305,8 @@
                                 data-type="text" 
                                 data-responsive_offset="on" 
                                 data-frames="[{&quot;delay&quot;:10,&quot;speed&quot;:1500,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;&quot;,&quot;mask&quot;:&quot;x:0px;y:[100%];s:inherit;e:inherit;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power2.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:1500,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;y:[175%];&quot;,&quot;mask&quot;:&quot;x:inherit;y:inherit;s:inherit;e:inherit;&quot;,&quot;ease&quot;:&quot;Power2.easeInOut&quot;}]">
-                                <a class="main_btn" href="#">Our Services</a>
-                                <a class="main_b_btn" href="#">Contact Us</a>
+                                <a class="main_btn" href=""  data-toggle="modal" data-target="#getStarted">Get Started</a>
+                                <a class="main_b_btn" href="services.html" >Our Services</a>
                             </div>
                         </div>
                     </li>
@@ -348,16 +356,49 @@
                                 data-type="text" 
                                 data-responsive_offset="on" 
                                 data-frames="[{&quot;delay&quot;:10,&quot;speed&quot;:1500,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;&quot;,&quot;mask&quot;:&quot;x:0px;y:[100%];s:inherit;e:inherit;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power2.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:1500,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;y:[175%];&quot;,&quot;mask&quot;:&quot;x:inherit;y:inherit;s:inherit;e:inherit;&quot;,&quot;ease&quot;:&quot;Power2.easeInOut&quot;}]">
-                                <a class="main_btn" href="#">Our Services</a>
-                                <a class="main_b_btn" href="#">Contact Us</a>
+                                <a class="main_btn" href=""  data-toggle="modal" data-target="#getStarted">Get Started</a>
+                                <a class="main_b_btn" href="services.html">Our Services</a>
                             </div>
                         </div>
                     </li>
                 </ul>
             </div>
+        <!--modal-->
+        <!--Modal: Login / Register Form-->
+<div class="modal fade" id="getStarted" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog cascading-modal" role="document">
+    <!--Content-->
+    <div class="modal-content">
+
+      <!--Modal cascading tabs-->
+      <ul class="nav nav-pills nav-justified" id="pills-tab" role="tablist">
+        <h3>Please choose an area of interest.</h3>
+          <li class="nav-item active">
+            <a class="nav-link active" id="pills-academic-tab" data-toggle="pill" href="#pills-academic" role="tab" aria-controls="pills-academic" aria-selected="true">Academic Reasearch</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="pills-corporate-tab" data-toggle="pill" href="#pills-corporate" role="tab" aria-controls="pills-corporate" aria-selected="false">Corporate Research</a>
+          </li>
+    </ul>
+    <div class="tab-content" id="pills-tabContent">
+    <div class="tab-pane fade in active" id="pills-academic" role="tabpanel" aria-labelledby="pills-academic-tab">
+    Academic Research
+    </div>
+    <div>
+      <div class="tab-pane fade" id="pills-corporate" role="tabpanel" aria-labelledby="pills-corporate-tab">Corporate Research</div>
+    </div>
+    </div>
+    
+    <!--/.Content-->
+  </div>
+</div>
+<!--Modal: Login / Register Form-->
+
+        <!--end of modal-->
         </section>
         <!--================End Slider Area =================-->
-        
+
+
                 <!--================Our Practice Area =================-->
         
         <!--================Get In Consultation Area =================-->
@@ -367,7 +408,7 @@
                     <img src="img/logo.png" alt="">
                     <h3>About Vance<span>Tech</span></h3>
                     <p>VanceTech is a research company serving institutes, communities and the government, non-governmental organizations in enhancing development in the world through research, evaluation and capacity development support. VanceTech was established by a group of consultants from various fields of their expertise in relations to the nature of work the centre is involved in. The centre has since attracted a galaxy of top notch consultants as part of its portfolio. Our strategic partnerships with leading research providers allow us to leverage your business through high quality services and solutions.</p>
-                    <a class="main_btn" href="services.html">Our services</a>
+                    <a class="main_btn" href="services.html">Get Started</a>
                 </div>
             </div>
         </section>
@@ -438,7 +479,7 @@
 <!--         <section class="our_service_area">
             <div class="container">
                 <div class="section_title">
-                    <h2>Our services</h2>
+                    <h2>Get Started</h2>
                 </div>
                 <div class="row service_inner">
                     <div class="col-xs-6 col-md-4">
@@ -787,11 +828,11 @@
                                 <p>Lorem ipsum dolor sit amet, consec-tet ur adipiscing elit, sed do iusmod tempor incididunt ut labore et.</p>
 <!--                                 <a class="f_r_link" href="#">Read More <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
  -->                                <ul class="f_social">
-                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-skype"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-pinterest-square"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-linkedin-square"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-skype"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-pinterest-square"></i></a></li>
                                 </ul>
                             </aside>
                         </div>
@@ -813,7 +854,7 @@
                         <div class="col-md-3 col-xs-6">
                             <aside class="f_widget link_widget">
                                 <div class="f_title">
-                                    <h3>our services</h3>
+                                    <h3>Get Started</h3>
                                 </div>
                                 <ul>
                                     <li><a href="services.html">-  Feasibilty Studies</a></li>
@@ -932,5 +973,14 @@
         <script type="text/javascript" src="js/jquery.call.js"></script>
         
         <script src="js/theme.js"></script>
+
+        <!-- modal form -->
+    
+        <script type="text/javascript" src="vendors/datepicker/bootstrap-datepicker.js"></script>
+
+        <!-- end of modal form -->
+
+
+
     </body>
 </html>
