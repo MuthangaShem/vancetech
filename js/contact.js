@@ -8,10 +8,13 @@ $(document).ready(function(){
         return this.optional(element) || /^\bcat\b$/.test(value)
     }, "type the correct answer -_-");
 
-    // validate contactForm form
+
     $(function() {
         $('#contactForm').validate({
             rules: {
+                access_token: {
+                    required: true
+                },
                 name: {
                     required: true,
                     minlength: 2
@@ -34,6 +37,9 @@ $(document).ready(function(){
                 }
             },
             messages: {
+                access_token: {
+                    required: "nice try buddy!",
+                },
                 name: {
                     required: "come on, you have a name, don't you?",
                     minlength: "your name must consist of at least 2 characters"
@@ -55,10 +61,12 @@ $(document).ready(function(){
                 }
             },
             submitHandler: function(form) {
+                form['access_token'] = uyvdgpkx1c7780wnivldeu7b;
+                console.log('form: ' + form.attr(value));
                 $(form).ajaxSubmit({
                     type:"POST",
-                    data: $(form).serialize(),
-                    url:"contact_process.php",
+                    data: $(form.attr(value)).serialize(),
+                    url:"https://postmail.invotes.com/send",
                     success: function() {
                         $('#contactForm :input').attr('disabled', 'disabled');
                         $('#contactForm').fadeTo( "slow", 1, function() {
