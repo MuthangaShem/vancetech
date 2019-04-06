@@ -10,7 +10,7 @@ $(document).ready(function(){
 
 
     $(function() {
-        $('#contactForm').validate({
+        $('#null').validate({
             rules: {
                 access_token: {
                     required: true
