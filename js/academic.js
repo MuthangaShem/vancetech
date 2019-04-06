@@ -23,16 +23,14 @@ $(document).ready(function () {
     function send() {
         sendButton.val('Sending…');
         sendButton.prop('disabled', true);
-        console.log('corporate initiated');
+        console.log('academic clicked');
 
-        // var access_token = $("#" + form_id + " [name='access_token'] ").val();
         var typeOfService = $("#" + form_id + " [name='typeOfService']").val();
         var name = $("#" + form_id + " [name='name']").val();
         var email = $("#" + form_id + " [name='email']").val();
         var number = $("#" + form_id + " [name='number']").val();
         var service = $("#" + form_id + " [name='service']").val();
         var deadline = $("#" + form_id + " [name='deadline']").val();
-        // data['access_token'] = access_token;
         data['subject'] = 'Request for '+ typeOfService +' Service';
         data['text'] = 'Name: ' + name + ', Email: ' + email + ', Phone number: ' + number + ', Specific Service: ' + service + ', deadline: ' + deadline;
         $.post('https://postmail.invotes.com/send',

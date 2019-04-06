@@ -61,8 +61,8 @@ $(document).ready(function(){
                 }
             },
             submitHandler: function(form) {
-                form['access_token'] = uyvdgpkx1c7780wnivldeu7b;
-                console.log('form: ' + form.attr(value));
+                // form['access_token'] = uyvdgpkx1c7780wnivldeu7b;
+                console.log('form: ');
                 $(form).ajaxSubmit({
                     type:"POST",
                     data: $(form.attr(value)).serialize(),

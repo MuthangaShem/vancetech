@@ -378,25 +378,26 @@
                                     </div>
                                     <div class="form-row">
                                         <div class="form-group col-md-4">
-                                            <input type="hidden" type="text"  name="typeOfService" value="academic">
-                                            <label for="name" >Name</label>
+                                            <input type="hidden" type="text" name="typeOfService" value="academic">
+                                            <label for="name">Name</label>
                                             <input required type="name" name="name" class="form-control" id="name"
-                                                placeholder="Your name..." >
+                                                placeholder="Your name...">
                                         </div>
                                         <div class="form-group col-md-4">
                                             <label for="email">Email</label>
-                                            <input required type="email" name="email" class="form-control" id="email" placeholder="Email" >
+                                            <input required type="email" name="email" class="form-control" id="email"
+                                                placeholder="Email">
                                         </div>
                                         <div class="form-group col-md-4">
                                             <label for="number">Phone Number</label>
                                             <input required type="number" name="number" class="form-control" id="number"
-                                                placeholder="Phone Number" >
+                                                placeholder="Phone Number">
                                         </div>
                                     </div>
                                     <div class="form-row">
                                         <div class="form-group col-md-6">
                                             <label for="inputState">Service</label>
-                                            <select required id="inputState" class="form-control" name="service" >
+                                            <select required id="inputState" class="form-control" name="service">
                                                 <option selected disabled>Choose a service</option>
                                                 <option>Admission Essays</option>
                                                 <option>Annotated Bibliographies</option>
@@ -421,14 +422,15 @@
                                     <div class="modal-footer">
                                         <button type="button" class="btn btn-secondary"
                                             data-dismiss="modal">Close</button>
-                                        <input type="submit" name="send" value="Send" class="btn btn-primary" >
+                                        <input type="submit" name="send" value="Send" class="btn btn-primary">
                                     </div>
 
                                 </form>
                             </div>
                             <div role="tabpanel" class="tab-pane fade" id="corporate">
-                                <form class="form-corporate" id="corporate" name="typeOfService2" value="corporate">
+                                <form class="form-corporate" id="corporate" value="corporate">
                                     <div class="form-row">
+                                            <input type="hidden" name="typeOfService2" value="corporate">
                                         <div class="form-group">
                                             <p>Our corporate research is designed to present the opinion of Objective's
                                                 analysts and what they believe to be the objective prospects of the
@@ -441,12 +443,13 @@
                                     <div class="form-row">
                                         <div class="form-group col-md-4">
                                             <label for="name">Name</label>
-                                            <input type="name" class="form-control" id="name"
-                                                placeholder="Your name..." name="name2">
+                                            <input type="name" class="form-control" id="name" placeholder="Your name..."
+                                                name="name2">
                                         </div>
                                         <div class="form-group col-md-4">
                                             <label for="email">Email</label>
-                                            <input type="email" class="form-control" id="email" placeholder="Email" name="email2">
+                                            <input type="email" class="form-control" id="email" placeholder="Email"
+                                                name="email2">
                                         </div>
                                         <div class="form-group col-md-4">
                                             <label for="number">Phone Number</label>
@@ -901,7 +904,7 @@
                     <h2>request a free consultation</h2>
                 </div>
                 <div class="row">
-                    <form class="request_contact" action="" method="post" id="contactForm" novalidate="novalidate">
+                    <form class="request_contact" action="https://formspree.io/muthangashem@gmail.com" method="post" id="contactForm" novalidate="novalidate">
                         <input type="hidden" class="form-control" id="access_token" name="access_token"
                             value="uyvdgpkx1c7780wnivldeu7b"></input>
                         <div class="form-group col-md-6">
@@ -922,7 +925,7 @@
                                 placeholder="Message"></textarea>
                         </div>
                         <div class="form-group col-md-12">
-                            <button type="submit" value="submit" class="btn submit_btn form-control">submit now</button>
+                            <input type="submit" value="Send" class="btn submit_btn form-control">
                         </div>
                     </form>
                 </div>

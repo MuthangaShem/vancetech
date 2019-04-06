@@ -1,7 +1,7 @@
 $(document).ready(function () {
 
     //update this with your $form selector
-    var form_id = "corporate"
+    var form_id = "corporate";
     console.log('corporate initiated');
 
     var data = {
@@ -18,22 +18,22 @@ $(document).ready(function () {
         window.location = window.location.pathname + "?message=Email+could+not+be+sent.&isError=1";
     }
 
-    var sendButton = $("#" + form_id + "[name='send2']");
+    var sendButton = $("#" + form_id + " [name='send2']");
 
     function send() {
         sendButton.val('Sending…');
         sendButton.prop('disabled', true);
-        console.log('academics clicked');
+        console.log('corporate sent');
 
-        // var access_token = $("#" + form_id + " [name='access_token'] ").val();
-        var typeOfService = $("#" + form_id + " [name='typeOfService']").val();
+        var typeOfService = $("#" + form_id + " [name='typeOfService2']").val();
         var name = $("#" + form_id + " [name='name2']").val();
         var email = $("#" + form_id + " [name='email2']").val();
         var number = $("#" + form_id + " [name='number2']").val();
         var service = $("#" + form_id + " [name='service2']").val();
         var deadline = $("#" + form_id + " [name='deadline2']").val();
         data['subject'] = 'Request for '+ typeOfService +' Service';
-        data['text'] = 'Name: ' + name + ', Email: ' + email + ', Phone number: ' + number + ', Type of service: ' + service + ', deadline: ' + deadline;
+        data['text'] = 'Name: ' + name + ', Email: ' + email + ', Phone number: ' + number + ', Specific Service: ' + service + ', deadline: ' + deadline;
+        console.log('form data: ' + JSON.stringify(data));
         $.post('https://postmail.invotes.com/send',
             data,
             onSuccess
