@@ -16,6 +16,8 @@
 
     <script src="js/jquery-2.2.4.js"></script>
 
+    <script data-cfasync="false" type="text/javascript"
+src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -86,7 +88,7 @@
                 <div class="header_top_inner">
                     <div class="pull-left">
                         <a href="#"><i class="fas fa-mobile-alt"></i>+ (254) 714937445</a>
-                        <a href="#"><i class="far fa-envelope"></i>info@vancetech.com</a>
+                        <a href="#"><i class="far fa-envelope"></i>info@vancetech.co.ke</a>
                         <a href="#"><i class="icon icon-Timer"></i>Mon-Sat : 8 am to 7 pm</a>
                     </div>
                     <div class="pull-right">
@@ -112,7 +114,7 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand" href="#"><img src="img/logo.png" alt="">
+                        <!-- <a class="navbar-brand" href="#"><img src="img/logo.png" alt=""> -->
                         </a>
                     </div>
 
@@ -508,7 +510,7 @@
     <section class="consult_policy_area">
         <div class="container">
             <div class="consult_policy_inner">
-                <img src="img/logo.png" alt="">
+                <!-- <img src="img/logo.png" alt=""> -->
                 <h3>About Vance<span>Tech</span></h3>
                 <p>VanceTech is a research company serving institutes, communities and the government, non-governmental
                     organizations in enhancing development in the world through research, evaluation and capacity
@@ -647,7 +649,7 @@
                         <div class="contact_d">
                             <a href="#"
                                 style="color: #0555b6; border-right: solid 2px;margin: 10px;padding-right: 10px">+254714937445</a>
-                            <a href="#">info@vancetech.com</a>
+                            <a href="#">info@vancetech.co.ke</a>
                         </div>
                     </div>
                 </div>
@@ -904,9 +906,7 @@
                     <h2>request a free consultation</h2>
                 </div>
                 <div class="row">
-                    <form class="request_contact" action="https://formspree.io/muthangashem@gmail.com" method="POST" id="contactForm" novalidate="novalidate">
-                        <!-- <input type="hidden" class="form-control" id="access_token" name="access_token"
-                            value="uyvdgpkx1c7780wnivldeu7b"></input> -->
+                    <form class="request_contact" action="https://script.google.com/macros/s/AKfycbwX54UELp2tYZi6R3LyOkGDlsmxaW6lPmBjaXVZ/exec" method="POST" id="gform" novalidate="novalidate">
                         <div class="form-group col-md-6">
                             <input type="text" class="form-control" id="name" name="name" placeholder="Name">
                         </div>
@@ -946,7 +946,7 @@
                 <div class="row">
                     <div class="col-md-3 col-xs-6">
                         <aside class="f_widget about_widget">
-                            <img src="img/logo.png" alt="">
+                            <!-- <img src="img/logo.png" alt=""> -->
                             <p>Lorem ipsum dolor sit amet, consec-tet ur adipiscing elit, sed do iusmod tempor
                                 incididunt ut labore et.</p>
                             <!--                                 <a class="f_r_link" href="#">Read More <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
@@ -1019,7 +1019,7 @@
                                         <i class="fa fa-envelope-o" aria-hidden="true"></i>
                                     </div>
                                     <div class="media-body">
-                                        <a href="#">info@vancetech.com</a>
+                                        <a href="#">info@vancetech.co.ke</a>
                                     </div>
                                 </div>
                             </div>
@@ -1048,7 +1048,7 @@
 
 
     <!--================Contact Success and Error message Area =================-->
-    <div id="success" class="modal modal-message fade" role="dialog">
+    <div id="thankyou_message" class="thankyou_message" style="display: none" class="modal modal-message fade" role="dialog">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -1059,6 +1059,9 @@
                 </div>
             </div>
         </div>
+    </div>
+    <div id="thankyou_message" class="thankyou_message" style="display: none" role="dialog">
+        Success
     </div>
 
     <!-- Modals error -->
@@ -1110,6 +1113,10 @@
     <script type="text/javascript" src="vendors/datepicker/bootstrap-datepicker.js"></script>
 
     <!-- end of modal form -->
+
+    <!-- contact form -->
+    <script data-cfasync="false" type="text/javascript"
+src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
 
 
 

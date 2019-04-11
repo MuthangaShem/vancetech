@@ -4479,6 +4479,22 @@ i:before {
   width: 270px;
 }
 
+.research_nav .nav.nav-tabs li a {
+  display: block;
+  border: none;
+  background: #f1f1f1;
+  font-size: 15px;
+  color: #242424;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: .3px;
+  line-height: 55px;
+  padding: 0px 25px;
+  border-radius: 0px;
+  cursor: pointer;
+}
+
 .download_btn a {
   display: block;
   background: #373540;
@@ -4487,6 +4503,7 @@ i:before {
   font-family: "Lato", sans-serif;
   font-weight: bold;
   color: #fff;
+  text-align: center;
 }
 
 .download_btn a img {
