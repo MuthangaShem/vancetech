@@ -4428,6 +4428,27 @@ i:before {
   color: #fff;
 }
 
+.research_nav .nav.nav-tabs li.active a{
+  background: #0555b6;
+  color: #fff;
+}
+
+.research_nav .nav.nav-tabs li a {
+  display: block;
+  border: none;
+  background: #f1f1f1;
+  font-size: 15px;
+  color: #242424;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: .3px;
+  line-height: 55px;
+  padding: 0px 25px;
+  border-radius: 0px;
+  cursor: pointer;
+}
+
 .carrers_left .contact_info {
   margin-top: 50px;
   padding-right: 17px;
@@ -4477,22 +4498,6 @@ i:before {
 .carrers_left.affix-bottom {
   position: absolute;
   width: 270px;
-}
-
-.research_nav .nav.nav-tabs li a {
-  display: block;
-  border: none;
-  background: #f1f1f1;
-  font-size: 15px;
-  color: #242424;
-  font-family: "Montserrat", sans-serif;
-  font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: .3px;
-  line-height: 55px;
-  padding: 0px 25px;
-  border-radius: 0px;
-  cursor: pointer;
 }
 
 .download_btn a {
